@@ -672,16 +672,16 @@ body {
 .modal-input:focus {    
     border: 1px solid #404BBF;             
 } 
-/*.modal-input::placeholder {
+.modal-input::placeholder {
     color: crimson;
     font-size: 12px;    
 }
-.modal-input:valid {
+.modal-input:not(:focus):not(:placeholder-shown):valid {
     background-color: #31D0AA;
 }
-.modal-input:invalid {
+.modal-input:not(:focus):not(:placeholder-shown):invalid {
     background-color: crimson;
-}*/
+}
 .modal-placeholder {
     box-sizing: border-box;
     width: 360px;
