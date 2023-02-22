@@ -672,7 +672,7 @@ body {
 .modal-input:focus {    
     border: 1px solid #404BBF;             
 } 
-.modal-input::placeholder {
+/*.modal-input::placeholder {
     color: crimson;
     font-size: 12px;    
 }
@@ -681,7 +681,7 @@ body {
 }
 .modal-input:not(:focus):not(:placeholder-shown):invalid {
     background-color: crimson;
-}
+}*/
 .modal-placeholder {
     box-sizing: border-box;
     width: 360px;
@@ -730,4 +730,13 @@ body {
     background: #404BBF;
     border: 1px solid #404BBF;
     color: #ffffff;            
+}
+.chech-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    lter-spacing: 0.04em;
+    color: #757575;
 }
