@@ -785,6 +785,7 @@ body {
 } */
 
 .check-text{
+    content: "";
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -793,7 +794,6 @@ body {
     align-items: center;
     justify-content: center;
 }
-
 .check-text span{
     width: 16px;
     height: 16px;
@@ -805,22 +805,21 @@ body {
     justify-content: center;
     fill: transparent;
 }
-
 .input-check:checked + .check-text span{
     background-color: var(--active-color);
     border: none;
     fill: #F4F4FD;
 }
-
-.policy-link {
+.link-text {    
     font-size: 12px;
     line-height: 1.33;
-    letter-spacing: 0.04em;
+    lter-spacing: 0.04em;
+    color: #4D5AE5;
     text-decoration: none;
     text-decoration-line: underline;
     color: #4D5AE5;
-    padding-left: 4px;
-   }
+    padding-left: 4px;    
+}
 /*.modal-input::placeholder {
     color: crimson;
     font-size: 12px;    
@@ -887,25 +886,4 @@ body {
     background: #404BBF;
     border: 1px solid #404BBF;
     color: #ffffff;            
-}
-.chech-text {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    lter-spacing: 0.04em;
-    color: #757575;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.link-text {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    lter-spacing: 0.04em;
-    color: #4D5AE5;    
 }
