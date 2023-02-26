@@ -29,12 +29,12 @@ body {
   margin: 0 auto;
   /*outline: 2px sold tomato;*/     
 }
-/*.containerf {
+.containerf {
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;
     justify-content: center;
-    padding-top: 100px;
-}*/
+    padding-top: 100px;*/
+}
 :root {
     --effstext-color: #ffffff;
     --main-color-title: #2E2F42;
@@ -512,11 +512,14 @@ body {
     top: 2280px;*/
     background-color: #2E2F42;
     padding-top: 100px;
-    padding-bottom: 100px;    
+    padding-bottom: 100px;
+    width: 1440px;
+    margin: 0 auto;    
 }
 .footerlist {
     display: flex;
     gap: 120px;
+    position: relative;
     
 }
 .footertext{    
@@ -572,9 +575,72 @@ body {
 }
 .footertext-soc-link:is(:hover),
 .footertext-soc-link:is(:focus) {
-  background-color: #31D0AA;
-  
-} 
+  background-color: #31D0AA;  
+}
+.footer-subscribe{
+   margin-left: 80px;
+   Width: 453px;
+   Height: 80px;
+      
+}
+.subscribe-title{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.subscribe-form{
+    display: flex;
+}
+
+.subscribe-input{
+    display: flex;
+    width: 264px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+    /* outline: transparent; */
+    padding: 8px 16px;
+    margin-right: 24px;
+}
+.btn-subscribe{
+    min-width: 165px;
+    height: 40px;
+    background: var(--accent-color);
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    padding-left: 24px;
+    gap: 16px;
+    transition-property: cursor, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-subscribe:is(:hover, :focus) {
+    cursor: pointer;
+    background-color: var(--active-color);
+   
+}
+
+.subscribe-icon{
+  margin-right: auto;
+  fill: #FFFFFF;
+}
+
 /***modal***/
 .backdrop {
     position: fixed;
