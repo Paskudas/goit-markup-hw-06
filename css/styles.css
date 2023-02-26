@@ -654,24 +654,66 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8E8F99;
     padding-bottom: 4px;    
 }
+.modal-field{
+    margin-bottom: 8px;
+}
+.input-wrap{
+    position: relative;
+}
 .modal-input {
     width: 360px;
     height: 40px;
-    background: #FCFCFC;
-    box-sizing: border-box;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(117, 117, 117, 0.5);
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    padding-bottom: 8px;    
+    background: transparent;
+    padding-left: 50px;
+    outline: transparent;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input:hover,
 .modal-input:focus {    
-    border: 1px solid #404BBF;             
+    border: 1px solid #404BBF;                 
 } 
+.modal-input:focus + .modal-icon{
+    fill: var(--accent-color)
+}
+.modal-icon {
+    position: absolute;
+    left: 19px;
+    top: 50%;
+    transform: translatey(-50%);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-input:focus{
+    border-color:var(--accent-color)
+}
+
+.modal-input:focus + .modal-icon{
+    fill: var(--accent-color)
+}
+
+.modal-icon {
+    position: absolute;
+    left: 19px;
+    top: 50%;
+    transform: translatey(-50%);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 /*.modal-input::placeholder {
     color: crimson;
     font-size: 12px;    
@@ -739,4 +781,16 @@ body {
     line-height: 14px;
     lter-spacing: 0.04em;
     color: #757575;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    lter-spacing: 0.04em;
+    color: #4D5AE5;    
 }
