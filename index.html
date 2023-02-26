@@ -690,12 +690,13 @@
                 class="modal-input"
               />
               <svg class="modal-icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-person-name"></use>
+                <use href="./images/sprite.svg#icon-person-name"></use>
               </svg>
             </div>
             </div>
-            <label>
-              <span class="modal-form-text">Phone</span>
+            <div class="modal-field">
+            <label class="modal-form-text" for="user-name">Phone</label>
+            <div class="input-wrap">
               <input
                 type="tel"
                 name="phone"
@@ -707,9 +708,14 @@
                 value=""
                 required
               />
-            </label>
-            <label>
-              <span class="modal-form-text">Email</span>
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+            </div>
+            </div>
+             <div class="modal-field">
+            <label class="modal-form-text" for="user-name">Email</label>
+            <div class="input-wrap">
               <input
                 type="email"
                 name="email"
@@ -717,7 +723,11 @@
                 placeholder=""
                 required
               />
-            </label>
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./images/sprite.svg#icon-email"></use>
+              </svg>
+            </div>
+            </div>
             <label>
               <span class="modal-form-text">Comment</span>
               <textarea
@@ -731,11 +741,11 @@
               <input
                 class="input-check visually-hidden"
                 type="checkbox"
-                id="policy"
+                id="user-confirm"
                 name="user-confirm"
                 value="true"
               />
-              <label class="chech-text" for="policy"></label>
+              <label class="chech-text" for="user-confirm"></label>
               <span>
                   <svg
                     class="check-icon"
@@ -743,13 +753,13 @@
                     height="8"
                   >
                     <use
-                      href="./images/icons.svg#icon-vector"
+                      href="./images/sprite.svg#icon-vector"
                     ></use>
                   </svg>
                 </span> 
                 I accept the terms and conditions of the
                 <a class="link-text" href="./index.html"
-                  >Privacy Policy</a
+                  > Privacy Policy</a
                 >
               </label>
             </div>            
