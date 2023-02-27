@@ -712,6 +712,7 @@ body {
     align-items: flex-start;
     padding: 0px;
     gap: 8px;
+    display: block;
     border-radius: 4px;
 }
 .modal-form-text {
