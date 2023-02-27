@@ -512,8 +512,7 @@ body {
     top: 2280px;*/
     background-color: #2E2F42;
     padding-top: 100px;
-    padding-bottom: 100px;
-    width: 1440px;
+    padding-bottom: 100px;    
     margin: 0 auto;    
 }
 .footerlist {
@@ -722,14 +721,14 @@ body {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: #8E8F99;
-    padding-bottom: 4px;    
+    color: #8E8F99;        
 }
 .modal-field{
     margin-bottom: 8px;
 }
 .input-wrap{
     position: relative;
+    margin-top: 4px;
 }
 .modal-input {
     width: 360px;
@@ -743,7 +742,7 @@ body {
     background: transparent;
     padding-left: 50px;
     padding: 8px 36px;
-    outline: transparent;
+    outline: transparent;    
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
